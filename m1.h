@@ -1,7 +1,7 @@
 #ifndef _M1_H_
 #define _M1_H_
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_m1.h"
 

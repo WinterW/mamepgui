@@ -1,8 +1,7 @@
 #ifndef _MAMEPGUIMAIN_H_
 #define _MAMEPGUIMAIN_H_
 
-#include <QtGui>
-
+#include <QtWidgets>
 #include "ui_mainwindow.h"
 #include "gamelist.h"
 

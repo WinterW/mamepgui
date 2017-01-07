@@ -18,7 +18,16 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout">
-    <property name="margin">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
      <number>0</number>
     </property>
     <item row="0" column="0">
@@ -263,7 +272,16 @@
    </attribute>
    <widget class="QWidget" name="dockWidgetContents_8">
     <layout class="QGridLayout">
-     <property name="margin">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
       <number>0</number>
      </property>
      <item row="0" column="0">
@@ -290,7 +308,16 @@
    </attribute>
    <widget class="QWidget" name="dockWidgetContents_14">
     <layout class="QGridLayout">
-     <property name="margin">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
       <number>0</number>
      </property>
      <item row="0" column="0">
@@ -313,7 +340,7 @@
   </widget>
   <action name="actionDefaultOptions">
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/16x16/system-settings.png</normaloff>:/res/16x16/system-settings.png</iconset>
    </property>
    <property name="text">
@@ -322,7 +349,7 @@
   </action>
   <action name="actionRefresh">
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/16x16/view-refresh.png</normaloff>:/res/16x16/view-refresh.png</iconset>
    </property>
    <property name="text">
@@ -342,7 +369,7 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/16x16/help-browser.png</normaloff>:/res/16x16/help-browser.png</iconset>
    </property>
    <property name="text">
@@ -364,7 +391,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/mame32-view-detail.png</normaloff>:/res/mame32-view-detail.png</iconset>
    </property>
    <property name="text">
@@ -379,7 +406,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/mame32-view-group.png</normaloff>:/res/mame32-view-group.png</iconset>
    </property>
    <property name="text">
@@ -391,7 +418,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/mame32-view-licon.png</normaloff>:/res/mame32-view-licon.png</iconset>
    </property>
    <property name="text">
@@ -500,7 +527,7 @@
   </action>
   <action name="actionDirectories">
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/32x32/folder.png</normaloff>:/res/32x32/folder.png</iconset>
    </property>
    <property name="text">
@@ -509,7 +536,7 @@
   </action>
   <action name="actionProperties">
    <property name="icon">
-    <iconset resource="mamepgui_main.qrc">
+    <iconset resource="mamepgui.qrc">
      <normaloff>:/res/16x16/system-settings.png</normaloff>:/res/16x16/system-settings.png</iconset>
    </property>
    <property name="text">
@@ -777,7 +804,7 @@
   </action>
  </widget>
  <resources>
-  <include location="mamepgui_main.qrc"/>
+  <include location="mamepgui.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -1,3 +1,4 @@
+#include <QtConcurrent>
 #include "m1ui.h"
 #include "m1.h"
 #include "prototype.h"
@@ -212,9 +213,9 @@ void M1Core::updateList(const QString &)
 		}
 		while (!line.isNull());
 
-		win->m1UI->twSongList->header()->setResizeMode(2,QHeaderView::ResizeToContents);
-		win->m1UI->twSongList->header()->setResizeMode(0,QHeaderView::ResizeToContents);
-		win->m1UI->twSongList->header()->setResizeMode(1,QHeaderView::Stretch);
+        win->m1UI->twSongList->header()->setSectionResizeMode(2,QHeaderView::ResizeToContents);
+        win->m1UI->twSongList->header()->setSectionResizeMode(0,QHeaderView::ResizeToContents);
+        win->m1UI->twSongList->header()->setSectionResizeMode(1,QHeaderView::Stretch);
 	}
 }
 

@@ -380,7 +380,7 @@ MameDat::MameDat(QObject *parent, int method) :
 	QStringList args;
 	args << "-listxml";
 
-	loadProc = procMan->process(procMan->start(mame_binary, args, FALSE));
+    loadProc = procMan->process(procMan->start(mame_binary, args, false));
 
 	connect(loadProc, SIGNAL(readyReadStandardOutput()), this, SLOT(loadListXmlReadyReadStandardOutput()));
 	connect(loadProc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(loadListXmlFinished(int, QProcess::ExitStatus)));
@@ -1004,7 +1004,7 @@ void MameDat::loadListXmlFinished(int, QProcess::ExitStatus)
 	args << "-showconfig" << "-noreadconfig";
 
 	defaultIni.clear();
-	loadProc = procMan->process(procMan->start(mame_binary, args, FALSE));
+    loadProc = procMan->process(procMan->start(mame_binary, args, false));
 	connect(loadProc, SIGNAL(readyReadStandardOutput()), this, SLOT(loadDefaultIniReadyReadStandardOutput()));
 	connect(loadProc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(loadDefaultIniFinished(int, QProcess::ExitStatus)));
 	//reload gameList. this is a chained call from loadListXmlFinished()

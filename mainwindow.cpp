@@ -1,5 +1,7 @@
 #include <QtPlugin>
-
+#include <QtWidgets/QStyleFactory>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QScrollBar>
 #include "7zVersion.h"
 
 #include "mainwindow.h"

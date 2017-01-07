@@ -1,5 +1,6 @@
 include(common_settings.pri)
 
+greaterThan(QT_MAJOR_VERSION, 4): QT += concurrent widgets
 DESTDIR = bin
 TARGET = mamepgui
 QT += xml
@@ -13,7 +14,7 @@ TARGETDEPS += \
 	./lib/$${OSDIR}/liblzma.a
 
 LIBS += -L./lib/$${OSDIR}
-LIBS += -lquazip -llzma
+LIBS += -lquazip -llzma -lz
 
 build_sdl {
 	macx: LIBS += -framework Cocoa -framework IOKit -framework CoreAudio -framework AudioToolbox -framework AudioUnit -framework OpenGL -framework ForceFeedback
@@ -70,7 +71,7 @@ TRANSLATIONS = \
 	lang/mamepgui_ru_RU.ts \
 	lang/mamepgui_it_IT.ts
 
-RESOURCES = mamepgui.qrc
+RESOURCES = mamepgui.qrc 
 
 win32 {
 	RC_FILE = mamepgui.rc

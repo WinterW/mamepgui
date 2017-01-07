@@ -201,7 +201,7 @@ QString Utils::getMameVersion()
 	
 	mameVersion = "";
 
-	loadProc = procMan->process(procMan->start(mame_binary, args, FALSE));
+    loadProc = procMan->process(procMan->start(mame_binary, args, false));
 	//block calling thread
 	connect(loadProc, SIGNAL(readyReadStandardOutput()), this, SLOT(getMameVersionReadyReadStandardOutput()));
 	connect(loadProc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(getMameVersionFinished(int, QProcess::ExitStatus)));

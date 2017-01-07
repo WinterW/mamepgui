@@ -1,7 +1,7 @@
 #ifndef _MAMEPGUITYPES_H_
 #define _MAMEPGUITYPES_H_
 
-#include <QtGui>
+#include <QtWidgets>
 
 class BiosSet : public QObject
 {

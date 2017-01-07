@@ -1,8 +1,7 @@
 #ifndef _DIALOGS_H_
 #define _DIALOGS_H_
 
-#include <QtGui>
-
+#include <QtWidgets>
 #include "ui_playoptions.h"
 #include "ui_directories.h"
 #include "ui_about.h"

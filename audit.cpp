@@ -662,7 +662,7 @@ void MameExeRomAuditor::audit(int method)
 
 	tbAudit->clear();
 
-	loadProc = procMan->process(procMan->start(mame_binary, args, FALSE));
+    loadProc = procMan->process(procMan->start(mame_binary, args, false));
 
 	connect(loadProc, SIGNAL(readyReadStandardOutput()), this, SLOT(auditorReadyReadStandardOutput()));
 

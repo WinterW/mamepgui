@@ -1,7 +1,7 @@
 #ifndef _MAMEOPT_H_
 #define _MAMEOPT_H_
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_options.h"
 #include "ui_csvcfg.h"

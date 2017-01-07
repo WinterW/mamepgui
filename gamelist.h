@@ -1,8 +1,7 @@
 #ifndef _GAMELIST_H_
 #define _GAMELIST_H_
 
-#include <QtGui>
-
+#include <QtWidgets>
 enum
 {
 	GAME_MISSING = 0,

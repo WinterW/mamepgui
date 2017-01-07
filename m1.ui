@@ -15,7 +15,16 @@
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout_2">
-    <property name="margin">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
      <number>0</number>
     </property>
     <item row="0" column="0" colspan="10">
@@ -67,7 +76,7 @@ p, li { white-space: pre-wrap; }
          <property name="lineWidth">
           <number>0</number>
          </property>
-         <property name="numDigits">
+         <property name="digitCount">
           <number>4</number>
          </property>
          <property name="segmentStyle">
@@ -110,7 +119,7 @@ p, li { white-space: pre-wrap; }
           <string>Stop</string>
          </property>
          <property name="icon">
-          <iconset resource="mamepgui_main.qrc">
+          <iconset resource="mamepgui.qrc">
            <normaloff>:/res/16x16/media-playback-stop.png</normaloff>:/res/16x16/media-playback-stop.png</iconset>
          </property>
          <property name="flat">
@@ -130,7 +139,7 @@ p, li { white-space: pre-wrap; }
           <string>Play</string>
          </property>
          <property name="icon">
-          <iconset resource="mamepgui_main.qrc">
+          <iconset resource="mamepgui.qrc">
            <normaloff>:/res/16x16/media-playback-start.png</normaloff>:/res/16x16/media-playback-start.png</iconset>
          </property>
          <property name="flat">
@@ -173,7 +182,7 @@ p, li { white-space: pre-wrap; }
   </widget>
  </widget>
  <resources>
-  <include location="mamepgui_main.qrc"/>
+  <include location="mamepgui.qrc"/>
  </resources>
  <connections/>
 </ui>

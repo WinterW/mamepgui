@@ -1,7 +1,7 @@
 #ifndef _IPS_H_
 #define _IPS_H_
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_ips.h"
 

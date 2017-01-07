@@ -1,8 +1,7 @@
 #ifndef _SCREENSHOT_H_
 #define _SCREENSHOT_H_
 
-#include <QtGui>
-
+#include <QtWidgets>
 class Screenshot : public QDockWidget
 {
     Q_OBJECT

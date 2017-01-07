@@ -1,7 +1,7 @@
 #ifndef _PROCESSMANAGER_H_
 #define _PROCESSMANAGER_H_
 
-#include <QtGui>
+#include <QtWidgets>
 
 class ProcessManager : public QObject
 {
@@ -16,7 +16,7 @@ public:
 
 	ProcessManager(QWidget *parent = 0);
 
-	int start(QString &, QStringList &, bool autoConnect = TRUE);
+    int start(QString &, QStringList &, bool autoConnect = true);
 	QProcess *process(ushort);
 	QString readStandardOutput(QProcess *);
 	QString readStandardOutput(ushort);

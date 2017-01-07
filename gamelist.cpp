@@ -1,3 +1,4 @@
+#include <QtConcurrent>
 #include "gamelist.h"
 #include "prototype.h"
 #include "utils.h"

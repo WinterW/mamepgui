@@ -448,11 +448,11 @@ void IpsUI::updateList()
 	//hack. auto resize the header, then release view to the user
 	QHeaderView *header = twList->header();
 	header->resizeSection(1, 20);
-	header->setResizeMode(0, QHeaderView::ResizeToContents);
+    header->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 	qApp->processEvents();
 	//qt bug? must add a little more space
 	header->resizeSection(0, header->sectionSize(0) + 10);
-	header->setResizeMode(0, QHeaderView::Interactive);
+    header->setSectionResizeMode(0, QHeaderView::Interactive);
 
 	QTreeWidgetItem *item = twList->itemAt(0, 0);
 	if (item->childCount() > 0)
